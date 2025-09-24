@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Выбор адреса на карте</title>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=b1ee88c2-0e25-4fe7-a348-6b505928a184&lang=ru_RU"></script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Выберите адрес на карте</h2>
+    <p>Используйте поиск или кликните по любому месту на карте</p>
+    
+    <div id="map"></div>
+    
+    <div id="selectedAddress">
+        <strong>Выбранный адрес:</strong> 
+        <span id="addressText">еще не выбран</span>
+        <button onclick="sendRequest()">Нажми</button>
+    </div>
+
+    <script src="PostAdress.js"></script>
+</body>
+</html>
